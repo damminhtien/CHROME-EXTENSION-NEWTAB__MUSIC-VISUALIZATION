@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div>
+        <h1 style="color: orange;" ">MUSIC_VISUALIZER</h1>
+        <table border="1 ">
+            <caption style="font-size: 25px; color: #fff; ">QUICK MUSIC</caption>
+            <tbody>
+                <tr>
+                    <td class="icn "><img src="images/music-player.png "></td>
+                    <td id="b1" class="txt " style=" width: 115px; "> Người Ta Nói</td>
+                </tr>
+                <tr>
+                    <td class="icn "><img src="images/music-player.png "></td>
+                    <td id="b2" class="txt "> Cô gái đến từ hôm qua</td>
+                </tr>
+                <tr>
+                    <td class="icn "><img src="images/music-player.png "></td>
+                    <td id="b3" class="txt ">Mùa thu đi qua</td>
+                </tr>
+                <tr>
+                    <td class="icn "><img src="images/music-player.png "></td>
+                    <td id="b4" class="txt ">Cũng đành thôi</td>
+                </tr>
+                <tr>
+                    <td class="icn "><img src="images/music-player.png "></td>
+                    <td id="b5" class="txt ">Từ ngày em đến</td>
+                </tr>
+                <tr>
+                    <td class="icn "><img src="images/music-player.png "></td>
+                    <td id="b6" class="txt ">Chiều hôm ấy</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <canvas class="canvas canvas-pattern js-canvas " width="400 " height="400 "></canvas>
+    <canvas class="canvas js-duplicate " width="400 " height="400 "></canvas>
+    <table border="1 ">
+        <caption style="font-size: 30px; color: #fff; ">FAST ACCESS <a id="heart "><img class="spinner " src="images/heart.png " alt="she " style="cursor:pointer; "></a></caption>
+        <tbody>
+            <tr>
+                <td class="icn "><a id="fb " href="https://www.facebook.com/ "><img src="images/facebook.png " alt="facebook " style="cursor:pointer; "></a></td>
+                <td class="icn "><a id="insta " href="https://www.instagram.com/ "><img src="images/instagram.png " alt="instagram " style="cursor:pointer; "></a></td>
+                <td class="icn "><a id="blogger " href="https://www.blogger.com/ "><img src="images/blogger.png " alt="blogger " style="cursor: pointer; "></a></td>
+            </tr>
+            <tr>
+                <td class="icn "><a id="yt " href="https://www.youtube.com/ "><img src="images/youtube.png " alt="youtube " style="cursor:pointer; "></a></td>
+                <td class="icn "><a id="sis " href="http://sis.hust.edu.vn/ "><img src="images/job.png " alt="sis " style="cursor:pointer; "></a></td>
+                <td class="icn "><a id="github " href="https://github.com "><img src="images/github-logo.png " alt="github " style="cursor:pointer; "></a></td>
+            </tr>
+            <tr>
+                <td class="icn "><a id="driver " href="https://www.google.com/intl/vi_ALL/drive/ "><img src="images/drive.png " alt="google driver " style="cursor:pointer; "></a></td>
+                <td class="icn "><a id="codepen " href="https://codepen.io/ "><img src="images/3d-outlined-shape.png " alt="codepen " style="cursor:pointer; "></a></td>
+                <td class="icn "><a id="freecodecamp " href="https://www.freecodecamp.com/ "><img src="images/code.png " alt="freecodecamp " style="cursor: pointer; "></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class='wave'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <iframe id="if" width="0% " height="0 " scrolling="no " frameborder="no " src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/98628349&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    <script src="scripts/myScript.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
+body {
+    background: #834d9b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d04ed6, #834d9b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1, h2 {
+	font-family: 'Montserrat', cursive;
+	color:  whitesmoke;
+}
+
+.spinner {
+  	animation-name: spin, depth;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-duration: 10s;
+  	text-align: center;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+@keyframes depth {
+  0 { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}

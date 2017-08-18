@@ -1,0 +1,240 @@
+/* Canvas */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 23px;
+    animation: animate-text 4s infinite;
+}
+
+table {
+    border-radius: 10px;
+    border: 1;
+    border-color: orange;
+    padding: 7px;
+    float: right;
+}
+
+td {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: #f8ffc4;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+img:hover {
+    width: 36px;
+}
+
+.icn:hover {
+    background: white;
+    animation: spin 4s infinite;
+}
+
+.txt:hover{
+    color: white;
+    font-size: 17px;
+    color: black;
+    animation: changebackground 3s infinite;
+    cursor: url('../images/video-player.png'), auto;
+}
+
+body {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background: #fff url('../images/2.png') no-repeat fixed center;
+    background-size: cover;
+    cursor: url('../images/target.png'), auto;
+}
+
+.canvas {
+    display: inline;
+    border-radius: 50%;
+}
+
+.canvas-pattern {
+    display: none;
+}
+
+
+
+/* end canvas */
+
+audio {
+    display: none;
+}
+
+div.wave {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div.wave>span {
+    display: inline-block;
+    width: 8%;
+    height: 150px;
+    animation: animate .4s ease-in-out alternate infinite;
+}
+
+div.wave>span:nth-child(1) {
+    background-color: #FF00FF;
+}
+
+div.wave>span:nth-child(2) {
+    background-color: #F7877C;
+    animation-delay: .2s;
+}
+
+div.wave>span:nth-child(3) {
+    background-color: #0E7DA8;
+    animation-delay: .4s;
+}
+
+div.wave>span:nth-child(4) {
+    background-color: #C4EADF;
+    animation-delay: .6s;
+}
+
+div.wave>span:nth-child(5) {
+    background-color: #B4A4CB;
+    animation-delay: .8s;
+}
+
+div.wave>span:nth-child(6) {
+    background-color: #CC0000;
+    animation-delay: .7s;
+}
+
+div.wave>span:nth-child(7) {
+    background-color: #268BD2;
+    animation-delay: .8s;
+}
+
+div.wave>span:nth-child(8) {
+    background-color: #859900;
+    animation-delay: 1.2s;
+}
+
+div.wave>span:nth-child(9) {
+    background-color: #BBFFFF;
+    animation-delay: 1.32s;
+}
+
+div.wave>span:nth-child(10) {
+    background-color: #FFE8E8;
+    animation-delay: 1.5s;
+}
+
+@keyframes animate-text {
+    25% {
+        transform: rotateX(0deg);
+        color: orange;
+        transition: 1s;
+    }
+    50% {
+        transform: rotateX(90deg);
+        color: white;
+        transition: 1s;
+    }
+    75% {
+        transform: rotateX(180deg);
+        color: hotpink;
+        transition: 1s;
+    }
+    100% {
+        transform: rotateX(270deg);
+        color: rebeccapurple;
+        transition: 1s;
+    }
+}
+
+@keyframes animate {
+    10% {
+        height: 0px;
+    }
+    20% {
+        height: 20px;
+    }
+    30% {
+        height: 30px;
+    }
+    40% {
+        height: 40px;
+    }
+    50% {
+        height: 50px;
+    }
+    60% {
+        height: 60px;
+    }
+    70% {
+        height: 70px;
+    }
+    80% {
+        height: 80px;
+    }
+    90% {
+        height: 90px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+.spinner {
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    text-align: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes depth {
+    0 {
+        text-shadow: 0 0 black;
+    }
+    25% {
+        text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+    }
+    50% {
+        text-shadow: 0 0 black;
+    }
+    75% {
+        text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
+    }
+    100% {
+        text-shadow: 0 0 black;
+    }
+}
+
+@keyframes changebackground {
+    0%   {background-color: #ef9a99;}
+    20%  {background-color: #ede8a1;}
+    40%  {background-color: #c9f49a;}
+    60%  {background-color: #91daf2;}
+    80%  {background-color: #b098f9;}
+    80%  {background-color: #f4a4b8;}
+}
