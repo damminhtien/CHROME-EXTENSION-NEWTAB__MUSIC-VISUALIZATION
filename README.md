@@ -1,1 +1,5 @@
-# CHROME-EXTENSION-NEWTAB__MUSIC-VISUALIZATION
+# Newtab MusicVisualization
+## Chrome Extension
+* Canvas
+* Jquery
+* Bootstrap
